@@ -1,9 +1,9 @@
 # nvim
 自用 NeoVim 配置文件
 
-# 安装
+## 安装
 
-## Windows
+### Windows
 
 本体
 
