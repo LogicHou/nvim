@@ -3,7 +3,9 @@ packer.startup({
   function(use)
     -- Packer 可以管理自己本身
     use 'wbthomason/packer.nvim'
-    -- 你的插件列表...
+    --------------------- colorschemes --------------------
+    -- tokyonight
+    use("folke/tokyonight.nvim")
   end,
   config = {
     -- 并发数限制
