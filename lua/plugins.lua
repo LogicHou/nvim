@@ -6,6 +6,9 @@ packer.startup({
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
+    -------------------------- plugins -------------------------------------------
+    -- nvim-tree (新增)
+    use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
   end,
   config = {
     -- 并发数限制
