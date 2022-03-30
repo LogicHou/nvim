@@ -24,6 +24,9 @@ packer.startup({
     use("ahmedkhalf/project.nvim")
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    --------------------- LSP --------------------
+    -- lspconfig
+    use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
   end,
   config = {
     -- 并发数限制
