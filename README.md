@@ -18,6 +18,9 @@
 
     $ scoop install ripgrep
     $ scoop install fd
+    $ scoop install stylua
+    $ go install golang.org/x/tools/cmd/goimports@latest
+    $ scoop install shfmt
 
 如果安装 TreeSitter 遇到问题，可以尝试使用管理员模式启动 nvim ，重新尝试自动安装 TreeSitter 的 Paser
 

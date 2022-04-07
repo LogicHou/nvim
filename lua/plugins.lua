@@ -44,6 +44,9 @@ packer.startup({
     use("tami5/lspsaga.nvim")
     -- indent-blankline
     use("lukas-reineke/indent-blankline.nvim")
+    -- 代码格式化
+    -- use("mhartington/formatter.nvim")
+    use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
   end,
   config = {
     -- 并发数限制
