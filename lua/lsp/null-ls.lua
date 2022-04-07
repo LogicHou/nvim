@@ -32,7 +32,6 @@ null_ls.setup({
         "json",
         "yaml",
         "graphql",
-        "go",
       },
       prefer_local = "node_modules/.bin",
     }),
