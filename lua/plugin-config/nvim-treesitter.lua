@@ -27,6 +27,13 @@ treesitter.setup({
   indent = {
     enable = true,
   },
+  autopairs = {
+    enable = true
+  },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
 })
 
 -- 开启 Folding 模块

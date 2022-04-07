@@ -24,6 +24,13 @@ packer.startup({
     use("ahmedkhalf/project.nvim")
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    use("JoosepAlviste/nvim-ts-context-commentstring")
+    -- indent-blankline
+    use("lukas-reineke/indent-blankline.nvim")
+    -- autopairs
+    use("windwp/nvim-autopairs")
+    -- Easily comment stuff
+    use("numToStr/Comment.nvim") 
     --------------------- LSP --------------------
     -- lspconfig
     use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
@@ -42,8 +49,6 @@ packer.startup({
     -- ui
     use("onsails/lspkind-nvim")
     use("tami5/lspsaga.nvim")
-    -- indent-blankline
-    use("lukas-reineke/indent-blankline.nvim")
     -- 代码格式化
     -- use("mhartington/formatter.nvim")
     use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
