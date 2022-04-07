@@ -31,6 +31,9 @@ packer.startup({
     use("windwp/nvim-autopairs")
     -- Easily comment stuff
     use("numToStr/Comment.nvim") 
+    -- Git
+    use "lewis6991/gitsigns.nvim"
+
     --------------------- LSP --------------------
     -- lspconfig
     use({ "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" })
