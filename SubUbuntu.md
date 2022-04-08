@@ -42,13 +42,18 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
     $ sudo apt-get install -y build-essential
 
-## 更新 Git 到最新版本
+## 安装/更新 Git 到最新版本
 
     $ sudo add-apt-repository ppa:git-core/ppa
     $ sudo apt-get update
     $ sudo apt-get install git
 
-##  安装 lazygit
+初始配置：
+
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
+
+ 安装 lazygit
 
     $ sudo add-apt-repository ppa:lazygit-team/release
     $ sudo apt-get update
@@ -80,7 +85,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-修订相关配置：
+修改相关配置：
 
     ZSH_THEME="ys"
     plugins=(git extract z zsh-autosuggestions zsh-syntax-highlighting)
