@@ -70,6 +70,11 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     # 配置国内镜像 可选
     $ git config --global url."https://github.com.cnpmjs.org/".insteadOf "https://github.com/"
 
+配置 gitalias：
+
+    $ curl https://raw.githubusercontent.com/GitAlias/gitalias/main/gitalias.txt -o ~/.gitalias
+    $ git config --global include.path ~/.gitalias
+
  安装 lazygit
 
     $ sudo add-apt-repository ppa:lazygit-team/release
