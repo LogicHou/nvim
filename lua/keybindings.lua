@@ -10,6 +10,9 @@ local opt = {noremap = true, silent = true }
 -- 快速进入命令模式
 map("n", ";", ":", {noremap = true, silent = false })
 
+-- Copy to system clipboard
+map("v", "Y", "\"+y", opt)
+
 -- windows 分屏快捷键
 map("n", "sv", ":vsp<CR>", opt)
 map("n", "sh", ":sp<CR>", opt)

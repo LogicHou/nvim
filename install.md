@@ -210,6 +210,13 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ go install mvdan.cc/gofumpt@latest         # 更严格的 gofmt，用于 null-ls
     $ go install mvdan.cc/sh/v3/cmd/shfmt@latest # 用于 sh 文件的格式化，用于 null-ls
 
+    # 剪切板
+    $ sudo apt-get install zip
+    $ curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+    $ unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
+    $ chmod +x /tmp/win32yank.exe
+    $ sudo mv /tmp/win32yank.exe /usr/local/bin/
+
 安装本体：
 
     $ sudo add-apt-repository ppa:neovim-ppa/unstable
