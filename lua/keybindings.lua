@@ -13,6 +13,12 @@ map("n", ";", ":", {noremap = true, silent = false })
 -- Copy to system clipboard
 map("v", "Y", "\"+y", opt)
 
+-- 插入模式下的移动
+map("i", "<A-h>", "<Left>", opt)
+map("i", "<A-l>", "<Right>", opt)
+map("i", "<A-j>", "<Down>", opt)
+map("i", "<A-k>", "<Up>", opt)
+
 -- windows 分屏快捷键
 map("n", "sv", ":vsp<CR>", opt)
 map("n", "sh", ":sp<CR>", opt)
