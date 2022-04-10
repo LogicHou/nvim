@@ -18,6 +18,7 @@ require('plugin-config.indent-blankline')
 require('plugin-config.autopairs')
 require('plugin-config.comment')
 require('plugin-config.gitsigns')
+require('plugin-config.hop')
 
 -- 内置LSP
 require('lsp.setup')

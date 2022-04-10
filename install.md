@@ -217,6 +217,12 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ chmod +x /tmp/win32yank.exe
     $ sudo mv /tmp/win32yank.exe /usr/local/bin/
 
+    # stylua
+    $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # 先安装 rust，附带了 cargo
+    $ cargo install stylua
+    $ stylua -V
+    stylua 0.13.0
+
 安装本体：
 
     $ sudo add-apt-repository ppa:neovim-ppa/unstable

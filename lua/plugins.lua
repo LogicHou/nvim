@@ -33,6 +33,8 @@ packer.startup({
         use('numToStr/Comment.nvim')
         -- Git
         use('lewis6991/gitsigns.nvim')
+        -- hop.nvim
+        use({ 'phaazon/hop.nvim', branch = 'v1' })
 
         --------------------- LSP --------------------
         -- lspconfig
