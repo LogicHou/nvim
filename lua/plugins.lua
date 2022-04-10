@@ -35,6 +35,8 @@ packer.startup({
         use('lewis6991/gitsigns.nvim')
         -- hop.nvim
         use({ 'phaazon/hop.nvim', branch = 'v1' })
+        -- glow.nvim for markdown
+        use({ 'ellisonleao/glow.nvim' })
 
         --------------------- LSP --------------------
         -- lspconfig

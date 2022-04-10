@@ -14,12 +14,12 @@ WSL 2 就是 WSL 的 2.0 版本，WSL 2 的安装方法可以参考[官方指南
 
 在WSL的终端中输入:
 
-  echo "[interop]\nenabled=false\nappendWindowsPath=false" | sudo tee /etc/wsl.conf
+    echo "[interop]\nenabled=false\nappendWindowsPath=false" | sudo tee /etc/wsl.conf
 
 在 powershell (以管理员身份运行)中输入: (以重启wsl)
 
-  net stop LxssManager
-  net start LxssManager
+    net stop LxssManager
+    net start LxssManager
 
 ## 安装 Nerd Font 字体
 
@@ -199,20 +199,21 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
 安装依赖：
 
-    $ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
-    $ sudo dpkg -i ripgrep_13.0.0_amd64.deb
-    $ rm ripgrep_13.0.0_amd64.deb
+    $ curl -sLo /tmp/ripgrep_13.0.0_amd64.deb https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+    $ sudo dpkg -i /tmp/ripgrep_13.0.0_amd64.deb
     
-    $ curl -LO https://github.com/sharkdp/fd/releases/download/v8.3.2/fd_8.3.2_amd64.deb
-    $ sudo dpkg -i fd_8.3.2_amd64.deb
-    $ rm fd_8.3.2_amd64.deb
+    $ curl -sLo /tmp/fd_8.3.2_amd64.deb https://github.com/sharkdp/fd/releases/download/v8.3.2/fd_8.3.2_amd64.deb
+    $ sudo dpkg -i /tmp/fd_8.3.2_amd64.deb
+
+    $ curl -sLo /tmp/glow_1.4.1_linux_amd64.deb https://github.com/charmbracelet/glow/releases/download/v1.4.1/glow_1.4.1_linux_amd64.deb
+    $ sudo dpkg -i /tmp/glow_1.4.1_linux_amd64.deb
 
     $ go install mvdan.cc/gofumpt@latest         # 更严格的 gofmt，用于 null-ls
     $ go install mvdan.cc/sh/v3/cmd/shfmt@latest # 用于 sh 文件的格式化，用于 null-ls
 
     # 剪切板
     $ sudo apt-get install zip
-    $ curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+    $ curl -sLo /tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
     $ unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
     $ chmod +x /tmp/win32yank.exe
     $ sudo mv /tmp/win32yank.exe /usr/local/bin/
