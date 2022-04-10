@@ -281,6 +281,12 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ ln -s -f .tmux/.tmux.conf
     $ cp .tmux/.tmux.conf.local .
 
+## TIPS
+
+格式化当前目录下的所有 lua 文件：
+
+    find ./ -name "*.lua" | xargs stylua
+
 # 如果想在 Windows 下直接用需要的操作步骤 @todo
 
 本体
