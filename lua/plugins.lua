@@ -33,8 +33,6 @@ packer.startup({
         use('numToStr/Comment.nvim')
         -- Git
         use('lewis6991/gitsigns.nvim')
-        -- toggleterm
-        use('akinsho/toggleterm.nvim')
 
         --------------------- LSP --------------------
         -- lspconfig
