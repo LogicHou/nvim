@@ -19,5 +19,5 @@ hop.setup({
         "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>",
         {}
     ),
-    vim.api.nvim_set_keymap('n', 'ww', '<cmd>:HopWord<cr>', {}),
+    vim.api.nvim_set_keymap('n', '<leader>w', '<cmd>:HopWord<cr>', {}),
 })
