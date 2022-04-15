@@ -42,7 +42,7 @@ packer.startup({
         -- lspconfig
         use({ 'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer' })
         -- 补全引擎
-        use('hrsh7th/nvim-cmp')
+        use({ 'hrsh7th/nvim-cmp', commit = '4f1358e659d51c69055ac935e618b684cf4f1429' })
         -- snippet 引擎
         use('hrsh7th/vim-vsnip')
         -- 补全源
