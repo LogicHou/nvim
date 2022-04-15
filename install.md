@@ -211,7 +211,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ go install mvdan.cc/gofumpt@latest         # 更严格的 gofmt，用于 null-ls
     $ go install mvdan.cc/sh/v3/cmd/shfmt@latest # 用于 sh 文件的格式化，用于 null-ls
 
-    # 剪切板
+    # 可选   剪切板 已经更新了配置，现在通过y复制的内容也会同步到系统剪切板
     $ sudo apt-get install zip
     $ curl -sLo /tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
     $ unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
@@ -223,6 +223,12 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ cargo install stylua
     $ stylua -V
     stylua 0.13.0
+
+前端项目的依赖:
+
+    # 安装pnpm
+    $ curl -fsSL https://get.pnpm.io/install.sh | PNPM_VERSION=7.0.0-rc.3 sh -
+    $ html 所在目录执行pnpm init -y && pnpm i -D prettier eslint
 
 安装本体：
 
