@@ -220,6 +220,13 @@ pluginKeys.mapLSP = function(mapbuf)
     -- mapbuf('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
 end
 
+-- typescript 快捷键
+pluginKeys.mapTsLSP = function(mapbuf)
+    mapbuf('n', 'gs', ':TSLspOrganize<CR>', opt)
+    mapbuf('n', 'gr', ':TSLspRenameFile<CR>', opt)
+    mapbuf('n', 'gi', ':TSLspImportAll<CR>', opt)
+end
+
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)
     local feedkey = function(key, mode)
