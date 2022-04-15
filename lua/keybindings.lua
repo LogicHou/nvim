@@ -11,7 +11,8 @@ local opt = { noremap = true, silent = true }
 map('n', ';', ':', { noremap = true, silent = false })
 
 -- Copy to system clipboard
-map('v', 'Y', '"+y', opt)
+-- 现在y命令的内容会同步到系统system clipboard
+-- map('v', 'Y', '"+y', opt)
 
 -- 插入模式下的移动
 map('i', '<A-h>', '<Left>', opt)

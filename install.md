@@ -230,7 +230,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ curl -fsSL https://get.pnpm.io/install.sh | PNPM_VERSION=7.0.0-rc.3 sh -
     $ html 所在目录执行pnpm init -y && pnpm i -D prettier eslint
 
-安装本体：
+安装本体 推荐安装0.7以上版本 支持自动命令特性：
 
     $ sudo add-apt-repository ppa:neovim-ppa/unstable
     $ sudo apt-get update
