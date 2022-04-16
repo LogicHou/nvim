@@ -16,11 +16,13 @@ M.macInsertEnter = function()
     end
 end
 
+local config_path = vim.fn.stdpath('config')
+
 M.windowsInsertLeave = function()
-    vim.cmd(':silent :!~/.config/nvim/im-select.exe 1033')
+    vim.cmd(':silent :!' .. config_path .. '/im-select.exe 1033')
 end
 
 M.windowsInsertEnter = function()
-    vim.cmd(':silent :!~/.config/nvim/im-select.exe 2052')
+    vim.cmd(':silent :!' .. config_path .. '/im-select.exe 2052')
 end
 return M
