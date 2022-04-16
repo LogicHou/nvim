@@ -21,6 +21,7 @@ require('plugin-config.autopairs')
 require('plugin-config.comment')
 require('plugin-config.gitsigns')
 require('plugin-config.hop')
+require('plugin-config.trouble')
 
 -- 内置LSP
 require('lsp.setup')

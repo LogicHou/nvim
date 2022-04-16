@@ -10,6 +10,9 @@ local opt = { noremap = true, silent = true }
 -- 快速进入命令模式
 map('n', ';', ':', { noremap = true, silent = false })
 
+-- remap macro record key
+map('n', 'Q', 'q', opt)
+
 -- Copy to system clipboard
 -- 现在y命令的内容会同步到系统system clipboard
 -- map('v', 'Y', '"+y', opt)
@@ -119,6 +122,9 @@ map('n', '<C-w>', ':Bdelete!<CR>', opt)
 map('n', '<leader>bl', ':BufferLineCloseRight<CR>', opt)
 map('n', '<leader>bh', ':BufferLineCloseLeft<CR>', opt)
 map('n', '<leader>bc', ':BufferLinePickClose<CR>', opt)
+
+-- lsp
+map('n', '<leader>u', '<cmd>TroubleToggle lsp_references<cr>', opt)
 
 -- Telescope
 -- 查找文件

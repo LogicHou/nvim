@@ -37,6 +37,8 @@ packer.startup({
         use({ 'phaazon/hop.nvim', branch = 'v1' })
         -- glow.nvim for markdown
         use({ 'ellisonleao/glow.nvim' })
+        -- trouble.nvim
+        use('folke/trouble.nvim')
 
         --------------------- LSP --------------------
         -- lspconfig
