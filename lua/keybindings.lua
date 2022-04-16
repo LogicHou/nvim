@@ -130,14 +130,14 @@ map('n', '<leader>bl', ':BufferLineCloseRight<CR>', opt)
 map('n', '<leader>bh', ':BufferLineCloseLeft<CR>', opt)
 map('n', '<leader>bc', ':BufferLinePickClose<CR>', opt)
 
--- lsp
+-- TroubleToggle
 map('n', '<leader>u', '<cmd>TroubleToggle lsp_references<cr>', opt)
 
 -- Telescope
 -- 查找文件
 map('n', '<C-p>', ':Telescope find_files<CR>', opt)
 -- 全局搜索
-map('n', '<C-S-f>', ':Telescope live_grep<CR>', opt)
+map('n', '<C-f>', ':Telescope live_grep<CR>', opt)
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {
