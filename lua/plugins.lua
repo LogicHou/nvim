@@ -39,6 +39,8 @@ packer.startup({
         use({ 'ellisonleao/glow.nvim' })
         -- trouble.nvim
         use('folke/trouble.nvim')
+        -- outline
+        use('stevearc/aerial.nvim')
 
         --------------------- LSP --------------------
         -- lspconfig

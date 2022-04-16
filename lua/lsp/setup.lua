@@ -12,6 +12,7 @@ local servers = {
     emmet_ls = require('lsp.config.emmet'),
     jsonls = require('lsp.config.json'),
     tsserver = require('lsp.config.ts'),
+    aerial = require('lsp.config.aerial'),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do

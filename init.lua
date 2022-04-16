@@ -22,6 +22,7 @@ require('plugin-config.comment')
 require('plugin-config.gitsigns')
 require('plugin-config.hop')
 require('plugin-config.trouble')
+require('plugin-config.aerial')
 
 -- 内置LSP
 require('lsp.setup')

@@ -10,8 +10,15 @@ local opt = { noremap = true, silent = true }
 -- 快速进入命令模式
 map('n', ';', ':', { noremap = true, silent = false })
 
+-- save buffer
+map('n', '<C-s>', ':w<cr>', opt)
+map('i', '<C-s>', '<Esc>:w<cr>', opt)
+-- exit cur window
+map('n', '<leader>q', ':q<cr>', opt)
 -- remap macro record key
 map('n', 'Q', 'q', opt)
+-- cancel q
+map('n', 'q', '<Nop>', opt)
 
 -- Copy to system clipboard
 -- 现在y命令的内容会同步到系统system clipboard
@@ -130,7 +137,7 @@ map('n', '<leader>u', '<cmd>TroubleToggle lsp_references<cr>', opt)
 -- 查找文件
 map('n', '<C-p>', ':Telescope find_files<CR>', opt)
 -- 全局搜索
-map('n', '<C-f>', ':Telescope live_grep<CR>', opt)
+map('n', '<C-S-f>', ':Telescope live_grep<CR>', opt)
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
     i = {
