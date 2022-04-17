@@ -19,6 +19,8 @@ map('n', '<leader>q', ':q<cr>', opt)
 map('n', 'Q', 'q', opt)
 -- cancel q
 map('n', 'q', '<Nop>', opt)
+-- ctrl + a
+map('n', '<C-a>', 'ggVG', opt)
 
 -- Copy to system clipboard
 -- 现在y命令的内容会同步到系统system clipboard

@@ -226,7 +226,13 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
 前端项目的依赖:
 
-    # 安装pnpm
+安装node
+    
+我才用的是二进制包安装，参考链接 https://github.com/nodejs/help/wiki/Installation#how-to-install-nodejs-via-binary-archive-on-linux
+
+安装好后需要注意目录的用户组，不对的话用chown命令修改
+
+安装pnpm
     $ curl -fsSL https://get.pnpm.io/install.sh | PNPM_VERSION=7.0.0-rc.3 sh -
     $ html 所在目录执行pnpm init -y && pnpm i -D prettier eslint
 
