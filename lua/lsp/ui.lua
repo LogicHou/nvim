@@ -12,7 +12,7 @@ end
 
 -- lspkind
 local lspkind = require('lspkind')
-lspkind.setup({
+lspkind.init({
     -- default: true
     -- with_text = true,
     -- defines how annotations are shown
