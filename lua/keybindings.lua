@@ -49,14 +49,16 @@ map('v', 'K', ":move '<-2<CR>gv-gv", opt)
 map('v', 'p', '"_dP', opt)
 
 -- 退出
-map('n', 'q', ':q<CR>', opt)
+-- map('n', 'q', ':q<CR>', opt)
 map('n', 'qq', ':q!<CR>', opt)
-map('n', '<leader>q', ':qa!<CR>', opt)
+map('n', '<leader>q', ':q<CR>', opt)
 
 -- 重映射宏快捷键
 map('n', 'Q', 'q', opt)
 -- 取消 q 映射
 map('n', 'q', '<Nop>', opt)
+-- ctrl + a 全选内容
+map('n', '<C-a>', 'ggVG', opt)
 
 -- 插入模式下的移动
 map('i', '<A-h>', '<Left>', opt)
