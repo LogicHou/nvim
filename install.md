@@ -462,6 +462,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
     $ go install mvdan.cc/gofumpt@latest         # 更严格的 gofmt，用于 null-ls
     $ go install mvdan.cc/sh/v3/cmd/shfmt@latest # 用于 sh 文件的格式化，用于 null-ls
+    $ go install golang.org/x/tools/cmd/goimports@latest
 
     $ cargo install ripgrep
     $ cargo install fd-find
