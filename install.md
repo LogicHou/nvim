@@ -519,6 +519,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 ### 安装 oh my tmux
 
     $ cd
+    $ sudo dnf install -y tmux
     $ git clone https://github.com/gpakosz/.tmux.git
     $ ln -s -f .tmux/.tmux.conf
     $ cp .tmux/.tmux.conf.local .
