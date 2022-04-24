@@ -98,6 +98,31 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
     $ sudo apt-get install zsh
 
+## 安装 oh-my-zsh
+
+安装：
+
+    $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+安装插件：
+
+    $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+修改相关配置 vim ~/.zshrc ：
+
+    ZSH_THEME="ys"
+
+    plugins=(git extract z zsh-autosuggestions zsh-syntax-highlighting)
+
+    # My Setting
+    bindkey ',' autosuggest-accept
+    HIST_STAMPS="yyyy-mm-dd"
+
+使配置生效：
+
+    $ zsh
+
 ### zshrc 配置：
 
 创建 workspace 目录：
@@ -142,37 +167,12 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ vi /etc/hosts
     199.232.96.133  raw.github.com
 
-## 安装 oh-my-zsh
-
-安装：
-
-    $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-安装插件：
-
-    $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-修改相关配置 vim ~/.zshrc ：
-
-    ZSH_THEME="ys"
-
-    plugins=(git extract z zsh-autosuggestions zsh-syntax-highlighting)
-
-    # My Setting
-    bindkey ',' autosuggest-accept
-    HIST_STAMPS="yyyy-mm-dd"
-
-使配置生效：
-
-    $ zsh
-
 ## 安装 Neovim
 
 安装 go：
 
-    $ wget -c https://golang.google.cn/dl/go1.18.linux-amd64.tar.gz
-    $ sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+    $ wget -c https://golang.google.cn/dl/go1.18.1.linux-amd64.tar.gz
+    $ sudo tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz
     $ ls -F /usr/local/go
     AUTHORS          CONTRIBUTORS  PATENTS    SECURITY.md  api/  doc/         lib/   pkg/        src/
     CONTRIBUTING.md  LICENSE       README.md  VERSION      bin/  favicon.ico  misc/  robots.txt  test/
@@ -201,9 +201,14 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
     $ curl -sLo /tmp/ripgrep_13.0.0_amd64.deb https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
     $ sudo dpkg -i /tmp/ripgrep_13.0.0_amd64.deb
+    或者
+    $ cargo install ripgrep
     
     $ curl -sLo /tmp/fd_8.3.2_amd64.deb https://github.com/sharkdp/fd/releases/download/v8.3.2/fd_8.3.2_amd64.deb
     $ sudo dpkg -i /tmp/fd_8.3.2_amd64.deb
+    或者
+    $ cargo install fd-find
+
 
     $ curl -sLo /tmp/glow_1.4.1_linux_amd64.deb https://github.com/charmbracelet/glow/releases/download/v1.4.1/glow_1.4.1_linux_amd64.deb
     $ sudo dpkg -i /tmp/glow_1.4.1_linux_amd64.deb
@@ -228,7 +233,15 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
 安装node
     
-我才用的是二进制包安装，参考链接 https://github.com/nodejs/help/wiki/Installation#how-to-install-nodejs-via-binary-archive-on-linux
+我采用的是二进制包安装，参考链接 https://github.com/nodejs/help/wiki/Installation#how-to-install-nodejs-via-binary-archive-on-linux
+    
+    $ mkdir ~/.node
+    $ sudo tar -xJvf node-v16.14.2-linux-x64.tar.xz -C ~/.node
+    
+    zsh.conf
+    # node
+    export PATH=$HOME/.node/node-v16.14.2-linux-x64/bin:$PATH
+
 
 安装好后需要注意目录的用户组，不对的话用chown命令修改
 
