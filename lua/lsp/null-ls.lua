@@ -12,13 +12,19 @@ null_ls.setup({
     debug = false,
     sources = {
         -- Formatting ---------------------
-        --  brew install shfmt
+        -- shfmt
         formatting.shfmt,
         -- StyLua
         formatting.stylua,
         -- golang
         formatting.gofumpt,
         formatting.goimports,
+        -- rustfmt
+        formatting.rustfmt,
+        -- Python
+        -- pip install black
+        -- asdf reshim python
+        formatting.black.with({ extra_args = { '--fast' } }),
         -- frontend
         formatting.prettier.with({ -- 比默认少了 markdown
             filetypes = {

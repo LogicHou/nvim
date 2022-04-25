@@ -229,6 +229,12 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ stylua -V
     stylua 0.13.0
 
+    # rust rust-analyzer
+    $ mkdir -p ~/.local/bin
+    $ curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+    $ chmod +x ~/.local/bin/rust-analyzer
+    # neovim中运行 TSInstall rust 重启 Neovim 后打开 main.rs 文件应该可以看到语法高亮了
+
 前端项目的依赖:
 
 安装node

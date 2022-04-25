@@ -41,6 +41,8 @@ packer.startup({
         use('folke/trouble.nvim')
         -- outline
         use('stevearc/aerial.nvim')
+        -- Rust 增强
+        use('simrat39/rust-tools.nvim')
 
         --------------------- LSP --------------------
         -- lspconfig

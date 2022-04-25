@@ -13,6 +13,7 @@ local servers = {
     jsonls = require('lsp.config.json'),
     tsserver = require('lsp.config.ts'),
     aerial = require('lsp.config.aerial'),
+    rust_analyzer = require('lsp.config.rust'),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do
