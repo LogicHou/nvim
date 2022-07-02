@@ -321,6 +321,10 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
 
 # Centos8 下的安装流程
 
+设置时区：
+
+    $ timedatectl set-timezone Asia/Shanghai
+
 先安装梯子，避免网络问题导致的更新问题：
 
     $ mkdir ~/clash && cd ~/clash
