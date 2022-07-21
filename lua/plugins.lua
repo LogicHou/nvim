@@ -62,8 +62,8 @@ packer.startup({
     use('rafamadriz/friendly-snippets')
     -- ui
     use('onsails/lspkind-nvim')
-    use({ 'glepnir/dashboard-nvim' })
     --use('tami5/lspsaga.nvim')
+    use('glepnir/lspsaga.nvim')
     -- 代码格式化
     use('mhartington/formatter.nvim')
     use({ 'jose-elias-alvarez/null-ls.nvim', requires = 'nvim-lua/plenary.nvim' })
