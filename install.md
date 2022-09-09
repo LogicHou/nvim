@@ -332,6 +332,7 @@ Windows 下安装好 Nerd Font 字体后在 windows terminal 设置文件里配�
     $ gunzip clash-linux-amd64-v1.10.0.gz
     $ mv clash-linux-amd64-v1.10.0 clash
     $ vi config.yaml # 添加自己的配置文件进去
+    $ wget https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb 如果不能自动下载需要自己手动下载这个
     $ chmod +x clash
     $ ./clash -d . &
     $ export http_proxy=http://127.0.0.1:7890
